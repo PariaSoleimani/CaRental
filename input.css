@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* xs */
+#section--hero {
+  background: url(./assets/img/bg.png) 37% 0% / cover no-repeat;
+}
+
+/* sm */
+@media (min-width: 580px) {
+  #section--hero {
+    background: url(./assets/img/bg.png) 40% 0% / cover no-repeat;
+  }
+}
+
+/* md */
+@media (min-width: 780px) {
+  #section--hero {
+    background: url(./assets/img/bg.png) top left / cover no-repeat;
+  }
+}
+
+.header-link {
+  @apply relative after:transition-all after:duration-500 after:content-[""] after:w-0 after:bg-red-500 after:absolute after:-left-[10%] after:-bottom-[20%] after:h-[2px] hover:after:w-[120%];
+}
