@@ -20,18 +20,14 @@
           <a class="text-xl font-semibold md:text-2xl" href="#"
             ><span>Ca<span class="text-red-500">Rental</span></span></a
           >
-          <nav class="hidden lg:block">
-            <ul class="flex items-center gap-8">
+          <nav class="hidden md:block">
+            <ul class="flex items-center gap-5 lg:gap-8 xl-gap-10">
               <li>
                 <a class="header-link" href="#">Home</a>
               </li>
               <li><a class="header-link" href="#">Ride</a></li>
               <li>
-                <a
-                  class="relative transition-all duration-300 header-link"
-                  href="#section--services"
-                  >Service</a
-                >
+                <a class="header-link" href="#section--services">Service</a>
               </li>
               <li>
                 <a class="header-link" href="#section--about">About</a>
@@ -41,14 +37,53 @@
               </li>
             </ul>
           </nav>
-          <div class="flex items-center gap-3 md:gap-5">
-            <button
-              class="px-4 py-2 text-sm text-white duration-200 bg-red-500 rounded-lg sm:text-sm md:text-base md:px-6 hover:bg-red-600"
+          <div class="hidden sm:block">
+            <div class="flex items-center gap-3 md:gap-5">
+              <button
+                class="px-4 py-2 text-sm text-white duration-200 bg-red-500 rounded-lg sm:text-sm md:text-base md:px-6 hover:bg-red-600"
+              >
+                Sign Up</button
+              ><button class="text-sm duration-200 sm:text-sm md:text-base hover:text-red-500">
+                Sign In
+              </button>
+            </div>
+          </div>
+
+          <!-- RESPONSIVE NAVIGATION -->
+          <div class="cursor-pointer menu-btn md:hidden">
+            <box-icon size="2rem" color="orangered" name="menu-alt-right"></box-icon>
+          </div>
+          <div class="hidden menu">
+            <nav
+              class="absolute top-0 left-0 z-50 flex items-center justify-center w-screen h-screen bg-neutral-100 bg-opacity-95"
             >
-              Sign Up</button
-            ><button class="text-sm duration-200 sm:text-sm md:text-base hover:text-red-500">
-              Sign In
-            </button>
+              <!-- <div class="absolute top-5 left-3/4">
+                <box-icon size="2rem" color="orangered" name="x"></box-icon>
+              </div> -->
+              <ul class="flex flex-col gap-6">
+                <li>
+                  <a class="font-medium text-red-500" href="#">Home</a>
+                </li>
+                <li><a class="font-medium text-red-500" href="#">Ride</a></li>
+                <li>
+                  <a class="font-medium text-red-500" href="#section--services">Service</a>
+                </li>
+                <li>
+                  <a class="font-medium text-red-500" href="#section--about">About</a>
+                </li>
+                <li>
+                  <a class="font-medium text-red-500" href="#section--reviews">Reviews</a>
+                </li>
+                <li>
+                  <button
+                    class="px-4 py-2 mr-3 text-sm text-white duration-200 bg-red-500 rounded-lg hover:bg-red-600"
+                  >
+                    Sign Up
+                  </button>
+                  <button class="text-sm duration-200 hover:text-red-500">Sign In</button>
+                </li>
+              </ul>
+            </nav>
           </div>
         </header>
         <main class="py-4 md:py-6 lg:py-8">
